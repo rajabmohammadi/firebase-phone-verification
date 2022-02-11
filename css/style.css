@@ -1,0 +1,34 @@
+body {
+    background-color: #ddd;
+    ;
+}
+
+main {
+    margin-top: 200px;
+}
+
+main,
+div {
+    width: 500px;
+    margin: auto;
+}
+
+input {
+    width: 100%;
+    margin-top: 20px;
+    height: 30px;
+    border: 2px solid #000;
+}
+
+button {
+    padding: 5px;
+    margin-top: 20px;
+    width: 50%;
+    background-color: bisque;
+    text-align: center;
+}
+
+input#code,
+button#confirm-code {
+    display: none;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Phone Number Verification</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <main>
+    <div>
+      <input type="tel" id="phoneNumber" placeholder="Enter phone number" />
+       <button id="sign-in-button" onclick="submitPhoneNumberAuth()">
+        SIGN IN WITH PHONE
+      </button>
+      <input type="text" id="code" placeholder="Enter verification code" />
+      <button id="confirm-code" onclick="submitPhoneNumberAuthCode()">
+        ENTER CODE
+      </button>
+      <!-- Add a container for reCaptcha -->
+      <div id="recaptcha-container"></div>
+    </div>
+  </main>
+
+
+  <!-- Add the latest firebase dependecies from CDN -->
+  <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-auth.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
